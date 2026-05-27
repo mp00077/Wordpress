@@ -1,0 +1,162 @@
+/*
+Theme Name: Travel Blog
+Theme URI: https://example.com/travel-blog
+Author: Codex
+Author URI: https://example.com
+Description: Editorial block theme for a cinematic travel blog with immersive photography, route-inspired layouts, and subtle motion.
+Requires at least: 6.6
+Tested up to: 7.0
+Requires PHP: 8.1
+Version: 0.1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: travel-blog
+Tags: blog, block-patterns, full-site-editing, photography, travel, wide-blocks
+*/
+
+:root {
+	--travel-blog-ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration-thickness: .08em;
+	text-underline-offset: .2em;
+}
+
+.wp-site-blocks {
+	overflow-x: clip;
+}
+
+.travel-blog-hero {
+	min-height: clamp(560px, 82vh, 820px);
+	position: relative;
+}
+
+.travel-blog-hero .wp-block-cover__background {
+	background: linear-gradient(90deg, rgba(18, 29, 24, .82) 0%, rgba(18, 29, 24, .62) 42%, rgba(18, 29, 24, .18) 100%) !important;
+}
+
+.travel-blog-hero .wp-block-heading {
+	max-width: 11ch;
+}
+
+.travel-blog-eyebrow {
+	font-size: .78rem;
+	letter-spacing: .14em;
+	text-transform: uppercase;
+}
+
+.travel-blog-route-line {
+	position: relative;
+}
+
+.travel-blog-route-line::before {
+	background: linear-gradient(180deg, var(--wp--preset--color--terracotta), rgba(189, 111, 74, 0));
+	border-radius: 999px;
+	content: "";
+	height: 100%;
+	left: .55rem;
+	position: absolute;
+	top: .2rem;
+	width: 2px;
+}
+
+.travel-blog-route-line > * {
+	position: relative;
+}
+
+.travel-blog-route-line > *::before {
+	background: var(--wp--preset--color--background);
+	border: 2px solid var(--wp--preset--color--terracotta);
+	border-radius: 999px;
+	box-shadow: 0 0 0 6px var(--wp--preset--color--background);
+	content: "";
+	height: .78rem;
+	left: -1.1rem;
+	position: absolute;
+	top: .58rem;
+	width: .78rem;
+}
+
+.travel-blog-card,
+.travel-blog-feature {
+	transition: transform .28s var(--travel-blog-ease), box-shadow .28s var(--travel-blog-ease), border-color .28s var(--travel-blog-ease);
+}
+
+.travel-blog-card:hover,
+.travel-blog-feature:hover {
+	border-color: color-mix(in srgb, var(--wp--preset--color--terracotta) 55%, transparent);
+	box-shadow: 0 22px 70px rgba(18, 29, 24, .11);
+	transform: translateY(-4px);
+}
+
+.travel-blog-image-lift img {
+	box-shadow: 0 28px 80px rgba(18, 29, 24, .18);
+	transform: rotate(-1deg);
+}
+
+.travel-blog-stamp {
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	display: inline-flex;
+	padding: .36rem .72rem;
+	transform: rotate(-2deg);
+}
+
+.travel-blog-reveal {
+	opacity: 0;
+	transform: translateY(22px);
+	transition: opacity .65s var(--travel-blog-ease), transform .65s var(--travel-blog-ease);
+}
+
+.travel-blog-reveal.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.travel-blog-parallax {
+	will-change: transform;
+}
+
+.wp-block-post-excerpt__more-link,
+.wp-block-read-more {
+	font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	.travel-blog-card,
+	.travel-blog-feature,
+	.travel-blog-reveal,
+	.travel-blog-parallax {
+		transition: none;
+		transform: none !important;
+	}
+}
+
+@media (max-width: 720px) {
+	.travel-blog-hero {
+		min-height: 620px;
+	}
+
+	.travel-blog-hero .wp-block-cover__background {
+		background: linear-gradient(180deg, rgba(18, 29, 24, .84) 0%, rgba(18, 29, 24, .56) 58%, rgba(18, 29, 24, .18) 100%) !important;
+	}
+
+	.travel-blog-route-line::before,
+	.travel-blog-route-line > *::before {
+		content: none;
+	}
+}

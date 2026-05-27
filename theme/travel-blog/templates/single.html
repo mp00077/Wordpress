@@ -1,0 +1,30 @@
+<!-- wp:template-part {"slug":"header","theme":"travel-blog","tagName":"header"} /-->
+<!-- wp:group {"tagName":"main","align":"full","layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignfull">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"4rem","bottom":"2rem"}}},"layout":{"type":"constrained","contentSize":"860px"}} -->
+	<div class="wp-block-group alignwide" style="padding-top:4rem;padding-bottom:2rem">
+		<!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"0.78rem","fontWeight":"700","textTransform":"uppercase"}},"textColor":"terracotta"} /-->
+		<!-- wp:post-title {"level":1,"style":{"typography":{"fontSize":"var:preset|font-size|hero","lineHeight":"0.98"},"spacing":{"margin":{"top":"0.75rem","bottom":"1rem"}}}} /-->
+		<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"0.5rem"}}} -->
+		<div class="wp-block-group">
+			<!-- wp:post-date {"style":{"typography":{"fontSize":"0.9rem"}}} /-->
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9rem"}}} -->
+			<p style="font-size:0.9rem">/</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:post-author-name {"style":{"typography":{"fontSize":"0.9rem"}}} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+	<!-- wp:post-featured-image {"align":"wide","aspectRatio":"16/9","style":{"border":{"radius":"8px"}}} /-->
+	<!-- wp:post-content {"layout":{"type":"constrained","contentSize":"760px","wideSize":"1080px"},"style":{"spacing":{"padding":{"top":"3rem","bottom":"4rem"}}}} /-->
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"5rem"}}},"layout":{"type":"constrained","contentSize":"760px"}} -->
+	<div class="wp-block-group alignwide" style="padding-bottom:5rem">
+		<!-- wp:post-terms {"term":"post_tag","separator":" ","style":{"typography":{"fontSize":"0.9rem"}}} /-->
+		<!-- wp:post-navigation-link {"type":"previous","showTitle":true,"style":{"spacing":{"margin":{"top":"2rem"}}}} /-->
+		<!-- wp:post-navigation-link {"showTitle":true} /-->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","theme":"travel-blog","tagName":"footer"} /-->
