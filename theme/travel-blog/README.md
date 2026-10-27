@@ -2,7 +2,7 @@
 
 Modern block theme for WordPress 7.0 travel publishing.
 
-Author: M. Pospíšil
+Author: M. Pospíšil http://mp00077.github.io
 
 ## Structure
 
