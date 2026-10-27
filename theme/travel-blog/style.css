@@ -1,7 +1,7 @@
 /*
 Theme Name: Travel Blog
 Theme URI: https://example.com/travel-blog
-Author: Codex
+Author: M. Pospíšil
 Author URI: https://example.com
 Description: Editorial block theme for a cinematic travel blog with immersive photography, route-inspired layouts, and subtle motion.
 Requires at least: 6.6
@@ -57,6 +57,23 @@ a {
 
 .travel-blog-route-line {
 	position: relative;
+}
+
+.travel-blog-home-menu {
+	backdrop-filter: blur(18px);
+	position: sticky;
+	top: 0;
+	z-index: 20;
+}
+
+.travel-blog-home-menu .wp-block-navigation-item__content {
+	border-radius: 999px;
+	padding: .42rem .76rem;
+}
+
+.travel-blog-home-menu .wp-block-navigation-item__content:hover {
+	background: color-mix(in srgb, var(--wp--preset--color--terracotta) 14%, transparent);
+	color: var(--wp--preset--color--ink);
 }
 
 .travel-blog-route-line::before {

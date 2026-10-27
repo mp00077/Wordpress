@@ -1,0 +1,74 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sunset Notes",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#fff4e4",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#231713",
+					"name": "Ink",
+					"slug": "ink"
+				},
+				{
+					"color": "#31513f",
+					"name": "Pine",
+					"slug": "pine"
+				},
+				{
+					"color": "#c35f3d",
+					"name": "Terracotta",
+					"slug": "terracotta"
+				},
+				{
+					"color": "#2e6d83",
+					"name": "Coast",
+					"slug": "coast"
+				},
+				{
+					"color": "#f4c15e",
+					"name": "Sun",
+					"slug": "sun"
+				},
+				{
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "white"
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--ink)"
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--terracotta)",
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--classic-serif)",
+					"fontWeight": "700"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--terracotta)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--body)"
+		}
+	}
+}

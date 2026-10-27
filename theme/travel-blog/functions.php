@@ -22,6 +22,13 @@ if ( ! function_exists( 'travel_blog_setup' ) ) {
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'title-tag' );
 		add_editor_style( 'style.css' );
+
+		register_nav_menus(
+			array(
+				'primary' => __( 'Primary menu', 'travel-blog' ),
+				'footer'  => __( 'Footer menu', 'travel-blog' ),
+			)
+		);
 	}
 }
 add_action( 'after_setup_theme', 'travel_blog_setup' );

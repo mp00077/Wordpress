@@ -1,0 +1,76 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Mountain Journal",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#eef1e7",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#101914",
+					"name": "Ink",
+					"slug": "ink"
+				},
+				{
+					"color": "#18382e",
+					"name": "Pine",
+					"slug": "pine"
+				},
+				{
+					"color": "#a9673f",
+					"name": "Terracotta",
+					"slug": "terracotta"
+				},
+				{
+					"color": "#547b80",
+					"name": "Coast",
+					"slug": "coast"
+				},
+				{
+					"color": "#e7c77a",
+					"name": "Sun",
+					"slug": "sun"
+				},
+				{
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "white"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--modern-sans)"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--ink)"
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--pine)",
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--display)",
+					"fontWeight": "700"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--modern-sans)"
+		}
+	}
+}

@@ -2,6 +2,8 @@
 
 Modern block theme for WordPress 7.0 travel publishing.
 
+Author: M. Pospíšil
+
 ## Structure
 
 - `style.css` - theme metadata, frontend CSS, hover states, reveal/parallax animation classes.
@@ -13,7 +15,18 @@ Modern block theme for WordPress 7.0 travel publishing.
 - `screenshot.png` - theme preview image for the WordPress admin.
 - `parts/` - reusable header and footer template parts.
 - `templates/` - home, index, archive, single, page, 404, and landing templates.
-- `patterns/` - hero and front-page sections for Full Site Editing.
+- `patterns/` - hero, homepage menu, and front-page sections for Full Site Editing.
+- `styles/` - global style variations for quick font and color switching.
+
+## Font and Color Settings
+
+The theme exposes editable palettes, font families, font sizes, line height, letter spacing, font weight, text transform, and decorations through the WordPress Site Editor.
+
+In WordPress go to Appearance > Editor > Styles. Use Typography to switch heading/body fonts and use Colors to adjust the global palette. The included style variations offer ready-made alternatives:
+
+- Editorial Coast
+- Mountain Journal
+- Sunset Notes
 
 ## Visual Direction
 

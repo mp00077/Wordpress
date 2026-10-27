@@ -1,0 +1,68 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Editorial Coast",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#f8fbfa",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#10202a",
+					"name": "Ink",
+					"slug": "ink"
+				},
+				{
+					"color": "#1f4b47",
+					"name": "Pine",
+					"slug": "pine"
+				},
+				{
+					"color": "#b96d51",
+					"name": "Terracotta",
+					"slug": "terracotta"
+				},
+				{
+					"color": "#1d7890",
+					"name": "Coast",
+					"slug": "coast"
+				},
+				{
+					"color": "#f2cf88",
+					"name": "Sun",
+					"slug": "sun"
+				},
+				{
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "white"
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--ink)"
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--coast)",
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--coast)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--body)"
+		}
+	}
+}

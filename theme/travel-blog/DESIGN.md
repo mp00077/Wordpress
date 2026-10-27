@@ -4,9 +4,11 @@
 
 Travel Blog is an editorial travel theme for long-form storytelling. It should feel calm, useful, and visually generous: a place for routes, field notes, city guides, travel essays, and destination archives.
 
+Author: M. Pospíšil
+
 ## Page System
 
-- Home: full-bleed photographic hero, latest dispatches query grid, destination system section, guide/editorial toolkit section.
+- Home: full-bleed photographic hero, sticky editable menu bar, latest dispatches query grid, destination system section, guide/editorial toolkit section.
 - Single post: category kicker, oversized title, author/date rhythm, wide featured image, narrow readable article body, tag and post navigation footer.
 - Archive: destination-style query grids with term description.
 - Page: clean editorial content frame for about, contact, resources, and newsletter pages.
@@ -27,6 +29,13 @@ Travel Blog is an editorial travel theme for long-form storytelling. It should f
 - Display: Fraunces or Georgia fallback for headlines.
 - Body: Inter or system sans-serif for UI and article readability.
 - Hero typography is large and tight. Cards and utility content use smaller type so repeated layouts stay dense and scannable.
+- Site Editor controls allow font family, size, weight, line height, letter spacing, casing, and decoration changes.
+
+## Style Variations
+
+- Editorial Coast: lighter editorial base with coastal blue links and pine headings.
+- Mountain Journal: deep green interface for a field-journal mood.
+- Sunset Notes: warmer paper, terracotta accents, and classic serif headings.
 
 ## Motion
 
